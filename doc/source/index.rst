@@ -38,8 +38,8 @@ Gero Doose, Kristin Reiche, Jana Hertel, Jörg Hackermüller
 **Supported Platforms:**
 
   * Unix-like operating systems.
-  * High Performance Compute (HPC) cluster systems such as |uge_link|,
-    |oge_link| and |slurm_link|.
+  * High Performance Compute (HPC) cluster systems such as `UGE`_,
+    `OGE/SGE`_ and `SLURM`_.
   * see :doc:`platforms` for detailed information
     
 **Important Information**
@@ -71,7 +71,7 @@ Table of contents
 Remarks
 *******
 
-This documentation has been created using |sphinx_link| and |rest_link|.
+This documentation has been created using `sphinx`_ and `reStructuredText`_.
 
 ******************
 Indices and tables
@@ -81,22 +81,11 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-.. |uge_link| raw:: html
- 
-   <a href="http://www.univa.com/products/" target="_blank">UGE</a>
+.. _UGE: http://www.univa.com/products/
 
-.. |oge_link| raw:: html
+.. _OGE/SGE: http://www.univa.com/oracle
 
-   <a href="http://www.univa.com/oracle" target="_blank">OGE/SGE</a>
+.. _SLURM: http://slurm.schedmd.com/
 
-.. |slurm_link| raw:: html
-      
-   <a href="http://slurm.schedmd.com/" target="_blank">SLURM</a>
-
-.. |sphinx_link| raw:: html
- 
-    <a href="http://www.sphinx-doc.org/" target="_blank">sphinx</a>
-
-.. |rest_link| raw:: html
- 
-    <a href="http://docutils.sourceforge.net/rst.html" target="_blank">reStructuredText</a>
+.. _sphinx: http://www.sphinx-doc.org/
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
