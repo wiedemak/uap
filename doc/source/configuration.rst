@@ -14,7 +14,7 @@
 Analysis Configuration File
 ***************************
 
-**uap** requires a |yaml_link| file which contains all information
+**uap** requires a `YAML`_ file which contains all information
 about the data analysis.
 These files are called configuration files.
 
@@ -37,7 +37,7 @@ although technically, they are keys):
   * ``cluster`` -- if **uap** is required to run on a HPC cluster some default
     parameters can be set her
 
-Please refer to the |yaml_link| definition for the correct notation used in
+Please refer to the `YAML`_ definition for the correct notation used in
 that file.
 
 Sections of a Configuration File
@@ -87,7 +87,7 @@ Every step name **must** be unique.
 
 .. note::
 
-   Please be aware that the |pyyaml_link|, the YAML parser used by uap, does not
+   Please be aware that the `PyYAML`_, the YAML parser used by uap, does not
    complain about keys with the same name.
    But drops one of the duplicates without giving an error.
 
@@ -142,7 +142,7 @@ Such a step definition would look like this:
 
 The options of the ``fastq_source`` step are described at :doc:`steps`.
 The ``group`` option takes a regular expression (regexp).
-You can test your regular expression at |pythex_link|.
+You can test your regular expression at `pythex.org`_.
 
 .. _config_file_processing_steps:
 
@@ -370,7 +370,7 @@ the version e.g. by running ``pigz --version``.
 If not set ``exit_code`` defaults to 0.
 
 **uap** can use the module system if you are working on a cluster system (e.g.
-|uge_link| or |slurm_link|).
+`UGE`_ or `SLURM`_).
 The configuration for ``pigz`` would change a bit:
 
 .. code-block:: yaml
@@ -447,7 +447,7 @@ system.
 -------------------
 
 The ``cluster`` section is required only if the analysis is executed on a
-system using a cluster engine like |uge_link| or |slurm_link|.
+system using a cluster engine like `UGE`_ or `SLURM`_ .
 This section interacts tightly with the  
 An example ``cluster`` section looks like this:
 
@@ -663,24 +663,14 @@ The submit script template is required by
 cluster.
 
 
-.. .. [1] |pyyaml_link|
+.. .. [1] `PyYAML`_
 
-.. |uge_link| raw:: html
+.. _UGE: http://www.univa.com/products/
 
-   <a href="http://www.univa.com/products/" target="_blank">UGE</a>
+.. _SLURM: http://slurm.schedmd.com/
 
-.. |slurm_link| raw:: html
+.. _YAML: http://www.yaml.org/
 
-   <a href="http://slurm.schedmd.com/" target="_blank">SLURM</a>
+.. _PyYAML: http://pyyaml.org/ticket/128
 
-.. |yaml_link| raw:: html
-
-   <a href="http://www.yaml.org/" target="_blank">YAML</a>
-
-.. |pyyaml_link| raw:: html
-
-   <a href="http://pyyaml.org/ticket/128" target="_blank">PyYAML</a>
-
-.. |pythex_link| raw:: html
-
-   <a href="http://pythex.org" target="_blank">pythex.org</a>
+.. _pythex.org: http://pythex.org
